@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+}
+.netflix-logo img {
+  height: 80px;
+  width: 220px;
+}
+.user-avatar {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.user-avatar img {
+  height: 80px;
+  width: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid black;
+  margin: 10px;
+}
+.video-slider-container {
+  overflow: hidden;
+}
+.video-preview {
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+}
+.genre-title {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.slider-scroll {
+  display: flex;
+}
+.card-parent {
+  margin: 0 10px;
+}
+.slider-parent {
+  overflow-x: scroll;
+}
+.scroll-button {
+  font-size: 30px;
+  font-weight: bold;
 }
